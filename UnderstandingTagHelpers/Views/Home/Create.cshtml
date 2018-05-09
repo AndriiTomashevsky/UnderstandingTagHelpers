@@ -15,7 +15,23 @@
         <label for="Population">Population:</label>
         <input name="Population" id="Population" />
     </div>
-    <button type="submit" bs-button-color="danger">Add</button>
-    <button type="reset" class="btn btn-primary">Reset</button>
+    <formbutton type="submit" bg-color="danger" /><formbutton type="reset" />
     <a href="/Home/Index">Cancel</a>
 </form>
+
+<!--
+FormButtonTagHelper:
+
+После модификации:
+      <button class="btn btn-danger" type="submit">Add</button><button class="btn btn-primary" type="reset">Reset</button>
+-->
+
+<!--
+BattonTagHelper:
+
+До модификации:
+    <button type="submit" bs-button-color="danger">Add</button>
+
+После модификации:
+    <button type="submit" class="btn btn-danger">Add</button>
+-->

@@ -27,6 +27,7 @@ namespace UnderstandingTagHelpers
             app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
             app.UseBrowserLink();
+            app.UseMvc(r => r.MapRoute(null, "{controller=Home}/{Action=Create}"));
             app.UseMvcWithDefaultRoute();
         }
     }

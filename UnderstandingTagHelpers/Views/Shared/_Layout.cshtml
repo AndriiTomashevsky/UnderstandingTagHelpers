@@ -1,10 +1,25 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>@ViewBag.Title</title>
-    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+	<title>@ViewBag.Title</title>
+	<link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-    <div>@RenderBody()</div>
+	<div title="Cities">
+		@RenderBody()
+	</div>
 </body>
 </html>
+
+<!--
+ContentWrapperTagHelper:
+
+После модификации:
+
+<div class="bg-info m-1 p-1"><h1>Cities</h1></div><div class="m-1 p-1">
+
+RenderBody
+
+</div><div class="bg-info m-1 p-1"><h1>Cities</h1></div>
+
+-->
