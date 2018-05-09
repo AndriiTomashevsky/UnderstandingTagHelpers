@@ -2,7 +2,8 @@
 
 namespace UnderstandingTagHelpers.Ifrastructure.TagHelpers
 {
-    [HtmlTargetElement(Attributes = "bs-button-color", ParentTag = "form")]
+    [HtmlTargetElement("button", Attributes = "bs-button-color", ParentTag = "form")]
+    [HtmlTargetElement("a", Attributes = "bs-button-color", ParentTag = "form")]
     public class ButtonTagHelper : TagHelper
     {
         public string BsButtonColor { get; set; }
