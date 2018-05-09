@@ -1,0 +1,26 @@
+﻿@model IEnumerable<City>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table >
+    <thead >
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Population</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var city in Model)
+        {
+            <tr>
+                <td>@city.Name</td>
+                <td>@city.Country</td>
+                <td>@city.Population?.ToString("#,###")</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<a href="/Home/Create">Create</a>

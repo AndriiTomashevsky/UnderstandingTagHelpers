@@ -1,0 +1,21 @@
+﻿@model City
+@{
+    ViewBag.Title = "Create";
+}
+<form method="post" action="/Home/Create">
+    <div>
+        <label for="Name">Name:</label>
+        <input name="Name" id="Name" />
+    </div>
+    <div>
+        <label for="Country">Country:</label>
+        <input name="Country" id="Country" />
+    </div>
+    <div>
+        <label for="Population">Population:</label>
+        <input name="Population" id="Population" />
+    </div>
+    <button type="submit" bs-button-color="danger">Add</button>
+    <button type="reset" class="btn btn-primary">Reset</button>
+    <a href="/Home/Index">Cancel</a>
+</form>
